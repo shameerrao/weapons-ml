@@ -1,0 +1,56 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weapons Image Classifier</title>
+  <!-- Linking Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Linking custom CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+  <!-- Including navbar -->
+  {% include 'navbar.html' %}
+
+    <!-- Container for Image Classifier V1 -->
+    <div class="container mt-5">
+      <!-- Title and description for Image Classifier V1 -->
+      <h1><b>Instance Segmentation Model</b></h1>
+      <!-- Information about the model -->
+      <p><b>Percision:</b> 79.4%</p>
+      <p><b>Dataset Split:</b></p>
+      <p>Training Set | 75% | 3,732 Images</p> 
+      <p>Validation Set | 15% | 699 Images</p>
+      <p>Testing Set | 10% | 366 Images</p>
+      <p><b>Preprocessing:</b></p> 
+      <p>Auto-Orient: Applied</p>
+      <p>Resize: Stretch to 640x640</p>
+      <p><b>Augmentations:</b></p>
+      <p>Outputs per training example: 2</p>
+      <p>Flip: Horizontal, Vertical</p>
+      <p>90° Rotate: Clockwise, Counter-Clockwise, Upside Down</p>
+    </div>
+
+    <!-- Upload form for all versions -->
+    <div class="container mt-5">
+      <h1><b>Upload Image</b></h1>
+      <form action="/upload_v3" method="post" enctype="multipart/form-data" class="form-container">
+        <div class="mb-3">
+          <label for="file" class="form-label">Select Image</label>
+          <input class="form-control" type="file" id="file" name="file">
+        </div>
+        <div class="text-center"> <!-- Centering the button -->
+          <button type="submit" class="btn btn-primary">Upload</button>
+        </div>
+      </form>
+    </div>
+    
+    <!-- Including necessary scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

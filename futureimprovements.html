@@ -1,0 +1,40 @@
+<!DOCTYPE html> <!-- Document type declaration -->
+<html lang="en"> <!-- HTML root element with language attribute -->
+<head>
+  <meta charset="UTF-8"> <!-- Set character encoding to UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Set viewport for responsive design -->
+  <title>Future Improvements</title> <!-- Set page title -->
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/futureimprovements.css') }}"> <!-- Link custom CSS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script> <!-- Popper.js -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!-- Bootstrap JS -->
+</head>
+<body>
+  {% include 'navbar.html' %} <!-- Include navbar template -->
+    <div class="container mt-5"> <!-- Main container with top margin -->
+        <div class="banner"> <!-- Banner section -->
+          <h1>Future Improvements</h1> <!-- Title -->
+        </div>
+        
+        <div class="z-format-container"> <!-- Container for z-format items -->
+          <!-- Image 1 -->
+          <div class="z-format-item"> <!-- Item for image -->
+            <img src="{{ url_for('static', filename='img/Edge.png') }}" alt="Edge" style="max-width: 100%; height: auto;"> <!-- Image with custom style -->
+          </div>
+          <!-- Text 1 -->
+          <div class="z-format-item"> <!-- Item for text -->
+            <p><b>Edge Deployment Optimization:</b> For applications requiring real-time classification on edge devices, focus on model compression techniques (quantization, pruning) and efficient inference libraries.</p> <!-- Text -->
+          </div>
+          <!-- Text 2 -->
+          <div class="z-format-item"> <!-- Item for text -->
+            <p><b>Scalable Inference Solutions:</b> Ensure that the deployment infrastructure can handle varying loads efficiently, utilizing cloud solutions with auto-scaling capabilities or deploying specialized hardware accelerators when necessary.</p> <!-- Text -->
+          </div>
+          <!-- Image 2 -->
+          <div class="z-format-item"> <!-- Item for image -->
+            <img src="{{ url_for('static', filename='img/Scale.jpg') }}" alt="Scale" style="max-width: 100%; height: auto;"> <!-- Image with custom style -->
+          </div>
+        </div>
+    </div>
+</body>
+</html>

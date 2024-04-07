@@ -1,0 +1,43 @@
+<!-- navbar.html -->
+
+<!-- Linking the navbar stylesheet -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/navbar.css') }}">
+
+<!-- Navigation bar -->
+<nav>
+    <div>
+        <!-- Unordered list for navigation links -->
+        <ul>
+            <!-- Home link -->
+            <li>
+                <a href="{{ url_for('index') }}">Home</a>
+            </li>
+            <!-- About Us link -->
+            <li>
+                <a href="{{ url_for('aboutus') }}">About Us</a>
+            </li>
+            <!-- Future Improvements link -->
+            <li>
+                <a href="{{ url_for('futureimprovements') }}">Future Improvements</a>
+            </li>
+            <!-- Dropdown menu for Visualizations -->
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle">Visualizations</a>
+                <!-- Dropdown menu content -->
+                <ul class="dropdown-menu">
+                    <!-- Model Visualization link -->
+                    <li><a href="{{ url_for('modelvisualization') }}">Model Visualization</a></li>
+                    <!-- Code Visualization link -->
+                    <li><a href="{{ url_for('codemodels') }}">Code Visualization</a></li>
+                </ul>
+            </li>
+        </ul>
+        <!-- Masthead image -->
+        <div class="masthead-image">
+            <!-- Image source -->
+            <img src="{{ url_for('static', filename='img/smcm-seal.png') }}" alt="Masthead">
+        </div>
+        <!-- Main link -->
+        <a href="#" class="main-link">Morgan Hacks 2024 New | Frontiers: AI/ML | Image Classifier</a>
+    </div>
+</nav>

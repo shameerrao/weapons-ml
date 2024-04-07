@@ -1,0 +1,83 @@
+/* styles.css */
+
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and HTML */
+body, html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    background-color: #000080; /* Background color for everything outside the container */
+}
+
+/* Container styles */
+.container {
+    width: 100%;
+    max-width: 960px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent; /* Transparent background */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Result box styles */
+.result-box {
+    width: fit-content; /* Adjust to the content width */
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(200, 200, 200, 0.7); /* Lighter gray background with transparency */
+    border-radius: 15px; /* Rounded edges */
+    margin-bottom: 20px; /* Margin to separate from the try again button */
+}
+
+.result-box h2 {
+    margin-bottom: 20px;
+}
+
+/* Alert styles */
+.alert {
+    margin-bottom: 20px;
+}
+
+/* Result details styles */
+.result-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result-info {
+    background-color: rgba(0, 0, 0, 0.1); /* Semi-transparent black background for result info */
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+/* Image result styles */
+.image-result {
+    margin-top: 20px;
+}
+
+/* Try again button styles */
+.try-again-btn {
+    margin-top: 20px; /* Margin to separate from the result box */
+}
+
+/* Form container styles */
+.form-container {
+    background-color: white; /* Same as result box background */
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.custom-upload-btn {
+    background-color: #007bff; /* Blue color */
+}

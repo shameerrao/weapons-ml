@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> <!-- Set character encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Set viewport for responsive design -->
+  <title>About Us</title> <!-- Set page title -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Link Bootstrap CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/aboutus.css') }}"> <!-- Link custom CSS -->
+</head>
+<body>
+  {% include 'navbar.html' %} <!-- Include navbar template -->
+
+    <div class="container mt-5"> <!-- Main container with top margin -->
+      <div class="banner"> <!-- Banner section -->
+        <h1>About Us</h1> <!-- Title -->
+      </div>
+      <div class="bio"> <!-- Bio section -->
+        <p>Seniors at St. Mary's College of Maryland</p> <!-- Bio paragraph -->
+      </div>
+      <!-- Profile Section -->
+      <div class="row"> <!-- Row for profile cards -->
+        <!-- Profile 1 -->
+        <div class="col-md-6"> <!-- Profile column for medium devices -->
+          <div class="profile"> <!-- Profile card -->
+            <img src="{{ url_for('static', filename='img/Shameer.jpg') }}" alt="Shameer S. Rao"> <!-- Profile image -->
+            <h3>Shameer S. Rao</h3> <!-- Profile name -->
+            <p>Incoming PhD Student @ Morgan State University in the Secure Embedded Systems Program.</p> <!-- Bio paragraph -->
+            <p>Current Computer Science Major.</p> <!-- Bio paragraph -->
+          </div>
+        </div>
+
+        <!-- Profile 2 -->
+        <div class="col-md-6"> <!-- Profile column for medium devices -->
+          <div class="profile"> <!-- Profile card -->
+            <img src="{{ url_for('static', filename='img/Alex.jpeg') }}" alt="Alexander Stoyanov-Roberts"> <!-- Profile image -->
+            <h3>Alexander W. Stoyanov-Roberts</h3> <!-- Profile name -->
+            <p>Incoming PhD Student @ Morgan State University in the Secure Embedded Systems Program.</p> <!-- Bio paragraph -->
+            <p>Current Computer Science Major and French Minor.</p> <!-- Bio paragraph -->
+          </div>
+        </div>
+
+        <!-- Profile 3 -->
+        <div class="col-md-6"> <!-- Profile column for medium devices -->
+          <div class="profile"> <!-- Profile card -->
+            <img src="{{ url_for('static', filename='img/Lily.png') }}" alt="Lillian Greenberg"> <!-- Profile image -->
+            <h3>Lillian Greenberg</h3> <!-- Profile name -->
+            <p>Computer Science Major and Mathematics Minor.</p> <!-- Bio paragraph -->
+          </div>
+        </div>
+
+        <!-- Profile 4 -->
+        <div class="col-md-6"> <!-- Profile column for medium devices -->
+          <div class="profile"> <!-- Profile card -->
+            <img src="{{ url_for('static', filename='img/Preston.jpeg') }}" alt="Preston D. Lee"> <!-- Profile image -->
+            <h3>Preston D. Lee</h3> <!-- Profile name -->
+            <p>Economics and Psychology Double Major.</p> <!-- Bio paragraph -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> <!-- jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/popper.min.js"></script> <!-- Popper.js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!-- Bootstrap JS -->
+</body>
+</html>

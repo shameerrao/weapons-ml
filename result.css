@@ -1,0 +1,66 @@
+/* result.css */
+
+/* General reset */
+* {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Use border-box box model */
+}
+
+/* Body and HTML */
+body, html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Set font family */
+    color: #ffffff; /* Text color */
+    background-color: navy; /* Navy background color */
+}
+
+/* Container styles */
+.container {
+    width: 100%; /* Full width */
+    max-width: 960px; /* Maximum width */
+    padding: 20px; /* Padding */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center content horizontally */
+    background-color: transparent; /* Transparent background */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Result box styles */
+.result-box {
+    width: fit-content; /* Adjust to the content width */
+    padding: 20px; /* Padding */
+    text-align: center; /* Center align text */
+    background-color: #a0a0a0; /* Dark grey background color */
+    border-radius: 15px; /* Rounded edges */
+    margin-bottom: 20px; /* Margin to separate from the try again button */
+}
+
+.result-box h2 {
+    margin-bottom: 20px; /* Margin below title */
+}
+
+/* Alert styles */
+.alert {
+    margin-bottom: 20px; /* Margin below alerts */
+}
+
+/* Result details styles */
+.result-details {
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+.result-info {
+    background-color: rgba(0, 0, 0, 0.1); /* Semi-transparent black background for result info */
+    border-radius: 5px; /* Rounded edges */
+    padding: 10px; /* Padding */
+    margin-bottom: 20px; /* Margin below result info */
+    width: 80%; /* Width */
+}
+
+/* Image result styles */
+.image-result {
+    margin-top: 20px; /* Margin above image result */
+}

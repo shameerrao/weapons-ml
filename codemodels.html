@@ -1,0 +1,48 @@
+<!DOCTYPE html> <!-- Document type declaration -->
+<html lang="en"> <!-- Root element indicating the language of the document -->
+<head> <!-- Header section containing metadata about the document -->
+  <meta charset="UTF-8"> <!-- Character encoding for the document -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Viewport settings for responsive design -->
+  <title>Code Visualizations</title> <!-- Title of the document -->
+  
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/modelvisualization.css') }}"> <!-- Link to external stylesheet -->
+  
+</head>
+<body> <!-- Body of the HTML document -->
+  {% include 'navbar.html' %} <!-- Include statement to import content from another file -->
+  <div class="container mt-5"> <!-- Container for content with top margin -->
+    <div class="banner"> <!-- Banner section -->
+      <h1>Code Visualizations</h1> <!-- Main heading -->
+    </div>
+    <div class="row"> <!-- Row for grid layout -->
+      <div class="col-md-7"> <!-- Column with medium width on medium-sized devices and above -->
+        <div class="image-container"> <!-- Container for an image and its title -->
+          <h3 class="title">Project Directory:</h3> <!-- Subheading for the image -->
+          <img src="{{ url_for('static', filename='img/Directory.png') }}" alt="Directory" style="height: auto; width: auto; max-height: 400px; max-width: 100%;"> <!-- Image with alternative text -->
+        </div>
+      </div>
+      <div class="col-md-6"> <!-- Column with medium width on medium-sized devices and above -->
+        <div class="image-container"> <!-- Container for an image and its title -->
+          <h3 class="title">Password Hashing and Salting:</h3> <!-- Subheading for the image -->
+          <img src="{{ url_for('static', filename='img/PassHash.png') }}" alt="PassHash"> <!-- Image with alternative text -->
+        </div>
+      </div>
+      <div class="col-md-6"> <!-- Column with medium width on medium-sized devices and above -->
+        <div class="image-container"> <!-- Container for an image and its title -->
+          <h3 class="title">Upload to Model and Draw Annoation: </h3> <!-- Subheading for the image -->
+          <img src="{{ url_for('static', filename='img/Upload Function.png') }}" alt="Upload Function"> <!-- Image with alternative text -->
+        </div>
+      </div>
+      <div class="col-md-6"> <!-- Column with medium width on medium-sized devices and above -->
+        <div class="image-container"> <!-- Container for an image and its title -->
+          <h3 class="title">Logic for Returning Highest Confidence:</h3> <!-- Subheading for the image -->
+          <img src="{{ url_for('static', filename='img/PredReturn.png') }}" alt="PredReturn" style="height: auto; width: auto; max-height: 400px; max-width: 100%;"> <!-- Image with alternative text -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> <!-- External JavaScript library -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script> <!-- External JavaScript library -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!-- External JavaScript library -->
+</body>
+</html>

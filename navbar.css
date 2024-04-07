@@ -1,0 +1,92 @@
+/* navbar.css */
+
+/* Navbar styles */
+nav {
+    background-color: #000080; /* Background color */
+    padding: 10px 20px; /* Padding for top and bottom, left and right */
+}
+
+nav div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: #ffffff; /* Text color */
+    text-decoration: none;
+    font-size: 1.2em; /* Font size */
+}
+
+nav button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px; /* Spacing between navbar items */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* No margin for the last navbar item */
+}
+
+nav ul li a {
+    color: #ffffff; /* Text color */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+nav ul li a:hover {
+    color: #cccccc; /* Text color on hover */
+}
+
+/* Style for the main link */
+nav a.main-link {
+    pointer-events: none; /* Disable pointer events */
+}
+
+/* Style for the masthead image */
+.masthead-image {
+    position: relative; /* Set position to relative */
+    top: -10px; /* Adjust the top position as needed */
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative; /* Set position to relative for proper dropdown positioning */
+}
+
+.dropdown-menu {
+    display: none; /* Hide dropdown menu by default */
+    position: absolute; /* Set position to absolute for proper dropdown positioning */
+    background-color: #000080; /* Background color for dropdown menu */
+    padding: 10px 0; /* Padding for dropdown menu */
+    z-index: 1; /* Set z-index to ensure dropdown appears above other elements */
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block; /* Display dropdown menu on hover */
+}
+
+.dropdown-menu li {
+    margin-right: 0; /* Reset margin for list items inside dropdown menu */
+    text-align: center; /* Align text in the center */
+}
+
+.dropdown-menu li a {
+    color: #ffffff; /* Text color for dropdown menu items */
+    text-decoration: none; /* Remove underline from links */
+    display: block; /* Display as block element */
+    padding: 10px 20px; /* Padding for dropdown menu items */
+}
+
+.dropdown-menu li a:hover {
+    background-color: #001a66; /* Background color on hover for dropdown menu items */
+}
