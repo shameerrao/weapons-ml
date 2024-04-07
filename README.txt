@@ -1,4 +1,4 @@
-# In terminal, enter the following commands to run the app: #
+In terminal, enter the following commands to run the app:
 
 pip install -r requirements.txt
 
